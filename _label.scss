@@ -1,0 +1,39 @@
+// ==========================================================================
+// LABEL ATOM
+// ==========================================================================
+/*doc
+---
+title: Labels
+name: 5_labels
+category: forms
+---
+
+```html_example
+<form class="">
+    <label class="label" for="select">This is the custom label style</label>
+</form>
+```
+*/
+
+.label {
+    display: block;
+    margin-bottom: rem-calc(15);
+    line-height: 1;
+    vertical-align: middle;
+    @include font-family(type-config(headings-family));
+    @include font-weight(regular);
+    @include font-scale(small);
+}
+
+label.label {
+    cursor: pointer;
+}
+
+.label--inline {
+    display: inline-block;
+    margin: rem-calc(0);
+
+    input + & {
+        margin-left: rem-calc(5);
+    }
+}
