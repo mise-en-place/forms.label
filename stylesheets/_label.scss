@@ -15,6 +15,9 @@ category: forms
 ```
 */
 
+@import "tool-rem-calc";
+@import "tool-font-scale";
+
 .label {
     display: block;
     margin-bottom: rem-calc(15);
