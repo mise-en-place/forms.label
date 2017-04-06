@@ -15,8 +15,8 @@ category: forms
 ```
 */
 
-@import "tool-rem-calc";
-@import "tool-font-scale";
+@import "~mep-tools.rem-calc";
+@import "~mep-tools.font-scale";
 
 .label {
     display: block;
